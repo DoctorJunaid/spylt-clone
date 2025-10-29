@@ -35,7 +35,7 @@ function Hero() {
           {
             y: 50,
             opacity: 0,
-            stagger: 0.03,
+            stagger: 0.04,
           },
           "-=0.5",
         );

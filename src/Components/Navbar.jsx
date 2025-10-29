@@ -3,7 +3,7 @@ import AnimatedMenuIconSpylt from "../MyComponents/AnimatedMenuIconSpylt.jsx";
 
 const Navbar = () => {
   return (
-    <nav className="py-2 px-5 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
+    <nav className="py-4 px-6 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
       <div>
         <CursorFollowImage
           maxMove={15}
@@ -16,8 +16,9 @@ const Navbar = () => {
         <AnimatedMenuIconSpylt />
       </div>
       <button
+      style={{wordSpacing : "3px"}}
         id={"navbar-button"}
-        className="bg-[#FEF3F0] hover:bg-[#E3A458]  font-bold px-6 py-2 rounded-full text-sm tracking-tighter  text-[#523122] transition-all duration-300 cursor-pointer"
+        className="bg-[#FEF3F0] hover:bg-[#E3A458]  font-bold px-10   rounded-full text-normal  py-4 tracking-tighter  text-[#523122] transition-all duration-300 cursor-pointer"
       >
         FIND IN STORES
       </button>
