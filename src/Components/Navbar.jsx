@@ -12,13 +12,15 @@ const Navbar = () => {
           }
         />
       </div>
-      <div>
+      <div className="hidden md:block">
         <AnimatedMenuIconSpylt />
       </div>
       <button
-      style={{wordSpacing : "3px"}}
+        style={{ wordSpacing: "3px" }}
         id={"navbar-button"}
-        className="bg-[#FEF3F0] hover:bg-[#E3A458]  font-bold px-10   rounded-full text-normal  py-4 tracking-tighter  text-[#523122] transition-all duration-300 cursor-pointer"
+        className="bg-[#FEF3F0] hover:bg-[#E3A458] font-bold rounded-full tracking-tighter text-[#523122] transition-all duration-300 cursor-pointer
+                   px-6 py-3 text-sm
+                   md:px-10 md:py-4 md:text-base"
       >
         FIND IN STORES
       </button>
