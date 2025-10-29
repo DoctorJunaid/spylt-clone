@@ -7,6 +7,7 @@ const App = () => {
       <div className="relative">
         <Navbar />
         <Hero />
+        <div className="h-screen w-screen"></div>
       </div>
     </>
   );
