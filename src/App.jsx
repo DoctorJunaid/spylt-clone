@@ -8,7 +8,7 @@ const App = () => {
       <div className="relative">
         <Navbar />
         <Hero />
-          <MessageSection />
+          <MessageSection /> 
         <div className="h-screen w-screen"></div>
       </div>
     </>
