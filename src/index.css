@@ -9,4 +9,6 @@ body {
     box-sizing: border-box;
     font-family: "Antonio", sans-serif;
 }
-
+#msgsectionp p{
+    word-spacing: 0.5em;
+}
