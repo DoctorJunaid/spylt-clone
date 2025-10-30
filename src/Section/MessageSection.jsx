@@ -35,7 +35,6 @@ const MessageSection = () => {
                 start: "top 80%",
                 end: "top 20%",
                 scrub: 3,
-                markers: true,
 
 
             },
@@ -51,7 +50,6 @@ const MessageSection = () => {
                 start: "top 80%",
                 end: "top 20%",
                 scrub: 3,
-                markers: true,
             },
         });
         gsap.to(BottommessageSplit.words, {
@@ -64,7 +62,6 @@ const MessageSection = () => {
                 start: "top 60%",
                 end: "top 20%",
                 scrub: 3,
-                markers: true,
 
 
             },
