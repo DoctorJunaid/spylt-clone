@@ -91,7 +91,7 @@ const MessageSection = () => {
 
 
     return (
-        <section className={"min-h-dvh bg-[#7F3B2D] overflow-x-hidden"}>
+        <section className={"min-h-dvh  bg-[#7F3B2D]  overflow-x-hidden"}>
 
             <div className={"mx-auto pt-36 md:pt-16 text-center flex flex-col items-center justify-center min-h-[80vh] "}>
                 <div className={"text-[rgba(250,234,222,0.11)] text-[7vw] text-center uppercase font-black tracking-tight leading-none"}>

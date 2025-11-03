@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar";
 import Hero from "./Section/Hero";
 import MessageSection from "./Section/MessageSection.jsx";
+import ScrollingSection from "./Section/ScrollingSection.jsx";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <Navbar />
         <Hero />
           <MessageSection /> 
+          <ScrollingSection />
         <div className="h-screen w-screen"></div>
       </div>
     </>
