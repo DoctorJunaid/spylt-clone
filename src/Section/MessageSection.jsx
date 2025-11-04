@@ -113,11 +113,16 @@ const MessageSection = () => {
                 <div  className={"text-[rgba(250,234,222,0.11)] text-[7vw] text-center uppercase font-black tracking-tight leading-none -mt-1 md:-mt-2 lg:-mt-5"}>
                     <h1 ref={BottommsgSectionpRef} >our future with every <br />gulp of Perfect Protein</h1>
                 </div>
-                <div  id={"msgsectionp"} className={"text-[#fff] text-[2vw] sm:text-[1.5vw] lg:text-[1vw] pt-16 font-thin pb-20 tracking-wide"}>
-                    <p>Rev up your rebel spirit and feed the adventure of life </p>
+                <div
+                    id="msgsectionp"
+                    className="text-white text-[2vw] sm:text-[1.5vw] lg:text-[1vw] pt-16 pb-20 tracking-wide
+         flex flex-col items-center justify-center text-center "
+                >
+                    <p>Rev up your rebel spirit and feed the adventure of life</p>
                     <p>with SPYLT, where you're one chug away from</p>
                     <p>epic nostalgia and fearless fun.</p>
                 </div>
+
             </div>
         </section>
     )
