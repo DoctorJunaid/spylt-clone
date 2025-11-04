@@ -1,5 +1,4 @@
     import React from 'react'
-    import SliderTitle from "./SliderTitle.jsx";
     import {flavorlists} from "/src/Constants/index.js"
 
     const ScrollFlavour = () => {
