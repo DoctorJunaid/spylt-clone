@@ -1,10 +1,74 @@
-    import React from 'react'
+    import React, {useRef} from 'react'
     import {flavorlists} from "/src/Constants/index.js"
+    import SliderTitle from "./SliderTitle.jsx";
+    import {useGSAP} from "@gsap/react";
+    import gsap from "gsap";
+    import ScrollTrigger from "gsap/ScrollTrigger";
+    import {useMediaQuery} from "react-responsive";
+
 
     const ScrollFlavour = () => {
+        gsap.registerPlugin(ScrollTrigger);
+        const SliderRef = useRef(null);
+        const isTablet = useMediaQuery({
+            query : "(max-width: 1024px)",
+
+        });
+
+        useGSAP(()=>{
+            if (isTablet) return;
+
+
+            const scrollAmount = SliderRef.current.scrollWidth - window.innerWidth;
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".flavour-wrapper",
+                    start: "0% top",
+                    end: `+=${scrollAmount + 500}px`,
+                    scrub: 3,
+                    pin: true,
+                }
+
+                })
+                tl.to(".flavours", {
+                    x : `-${scrollAmount + 500}px`,
+                    duration: 1,
+                    ease: "power2.inOut"
+
+            })
+
+            const Titletl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".flavour-wrapper",
+                    start: "top top",
+                    end: "bottom 80%",
+                    scrub: 3,
+                }
+
+
+            })
+            Titletl.from("#text1", {
+                xPercent: 15,
+                ease: "power1.inOut"
+                }).from("#clippath", {
+                    xPercent :  12,
+                ease: "power1.inOut"
+
+
+            },"<").from("#text2", {
+                xPercent: 8,
+                ease: "power1.inOut"
+            },"<")
+        })
+
+
+
+
         return (
-            <div className={"min-h-dvh w-full lg:h-dvh md:h-fit   bg-[#FCE1CD] mt-0  md:mt-20 lg:mt-10 xl:mt-0 py-10    "}>
-                <div className={"flavours h-full w-full flex flex-col  md:flex-row items-center 2xl:gap-72 lg:gap-50 md:gap-16 gap-7 flex-nowrap  "}>
+            <div className={"flavour-wrapper min-h-dvh w-full lg:h-dvh md:h-fit   bg-[#FCE1CD] mt-0  md:mt-20 lg:mt-10 xl:mt-0 py-10    "}>
+                <div ref={SliderRef} className={"flavours h-full w-full flex flex-col  lg:flex-row items-center 2xl:gap-72 lg:gap-50 md:gap-16 gap-7 flex-nowrap  "}>
+                <SliderTitle />
 
                 {
                     flavorlists.map((item, index) => {
