@@ -55,7 +55,7 @@ gsap.registerPlugin(SplitText , ScrollTrigger);
 
     })
   return (
-    <div className='w-full lg:min-w-3/4 h-fit py-20 bg-[#FCE1CD]'>
+    <div className='w-full lg:min-w-3/4 h-fit pb-20 bg-[#FCE1CD]'>
         <section>
         <div className="uppercase text-[#523122] text-[12vw] sm:text-[10vw] lg:text-[8vw] font-black tracking-tighter text-center  pt-[8vh]  lg:pt-[12vh] leading-tight px-4 
        -mb-2 md:-mb-4">

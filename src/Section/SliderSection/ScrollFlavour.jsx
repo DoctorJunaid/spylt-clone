@@ -66,7 +66,7 @@
 
 
         return (
-            <div className={"flavour-wrapper min-h-dvh w-full lg:h-dvh md:h-fit   bg-[#FCE1CD] mt-0  md:mt-20 lg:mt-10 xl:mt-0 py-10    "}>
+            <div className={"flavour-wrapper min-h-dvh w-full lg:h-dvh md:h-fit   bg-[#FCE1CD] mt-0  xl:mt-0 py-10    "}>
                 <div ref={SliderRef} className={"flavours h-full w-full flex flex-col  lg:flex-row items-center 2xl:gap-72 lg:gap-50 md:gap-16 gap-7 flex-nowrap  "}>
                 <SliderTitle />
 
