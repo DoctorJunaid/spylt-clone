@@ -19,20 +19,20 @@
             if (isTablet) return;
 
 
-            const scrollAmount = SliderRef.current.scrollWidth - window.innerWidth;
+            const scrollAmount = SliderRef.current.scrollWidth - window.innerWidth/2;
 
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".flavour-wrapper",
                     start: "0% top",
-                    end: `+=${scrollAmount + 500}px`,
+                    end: `+=${scrollAmount }px`,
                     scrub: 3,
                     pin: true,
                 }
 
                 })
                 tl.to(".flavours", {
-                    x : `-${scrollAmount + 500}px`,
+                    x : `-${scrollAmount}px`,
                     duration: 1,
                     ease: "power2.inOut"
 
@@ -65,8 +65,11 @@
 
 
 
+
+
+
         return (
-            <div className={"flavour-wrapper min-h-dvh w-full lg:h-dvh md:h-fit   bg-[#FCE1CD] mt-0  xl:mt-0 py-10    "}>
+            <div className={"flavour-wrapper min-h-dvh w-full lg:h-dvh md:h-fit   bg-[#FAEADE] mt-0  xl:mt-0 py-10    "}>
                 <div ref={SliderRef} className={"flavours h-full w-full flex flex-col  lg:flex-row items-center 2xl:gap-72 lg:gap-50 md:gap-16 gap-7 flex-nowrap  "}>
                 <SliderTitle />
 
